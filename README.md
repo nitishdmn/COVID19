@@ -8,4 +8,4 @@
 ##### JQUERY
 
 
-![IMAGE](./)
+![IMAGE](./COVID.png)
