@@ -54,14 +54,24 @@ $(document).ready(function () {
                         minBarLength: 100
                     },
                     {
-                        label:"Deceased Cases",
+                        label:"Death Cases",
                         data: deaths,
                         backgroundColor: "#e74c3c",
                         minBarLength: 100
                     },
                 ]
             },
-            options:{}
+            options:{
+                legend: {
+                    labels: {
+                        fontColor: 'white'
+                        
+                    }
+                    
+                }
+                
+                
+            }
         })
     })
 });

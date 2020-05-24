@@ -4,37 +4,44 @@
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <title>COVID 19 IND</title> 
+        <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     </head>
     <body>
-        <div class= "container-fluid p-3 bg-dark text-light font- text-center my-3">
-             <h1>COVID 19 INDIA</h1>
+        <div class= "container-fluid p-4 bg-dark text-light text-center">
+             <h1>COVID19 INDIA</h1>
              <h4 class="text-light">Nitish Dhiman</h4>
         </div>
-
-        <div class="container my-5">
-            <div class="row text-center">
-                <div class="col-3 text-dark bg-warning">
-                    <h5>Confirmed</h5>
-                    <p id="confirmed"></p>
+        <div class="data" >
+            <div class="container position-absolute my-4">
+                <div class="row text-center my-5 ">
+                    <div class="col-3 text-dark bg-warning">
+                        <h5>Confirmed</h5>
+                        <p id="confirmed"></p>
+                    </div>
+                    <div class="col-3 bg-primary text-white">
+                        <h5>Active</h5>
+                        <p id="active"></p>
+                    </div>
+                    <div class="col-3 text-white bg-success">
+                        <h5>Recovered</h5>
+                        <p id="recovered"></p>
+                    </div>
+                    <div class="col-3 text-white bg-danger">
+                        <h5>Deaths</h5>
+                        <p id="deaths"></p>
+                    </div>
                 </div>
-                <div class="col-3 bg-primary text-white">
-                    <h5>Active</h5>
-                    <p id="active"></p>
-                </div>
-                <div class="col-3 text-white bg-success">
-                    <h5>Recovered</h5>
-                    <p id="recovered"></p>
-                </div>
-                <div class="col-3 text-white bg-danger">
-                    <h5>Deceased</h5>
-                    <p id="deaths"></p>
-                </div>
+                <canvas id="covid_chart"></canvas>
             </div>
-            <canvas id="covid_chart"></canvas>
         </div>
+        </div>
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    
 </html>
