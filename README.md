@@ -9,4 +9,3 @@
 
 
 ![SAMPLE](./video.gif)
-![IMAGE](./COVID.png)
